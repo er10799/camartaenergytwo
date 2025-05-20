@@ -1,4 +1,4 @@
-# Project Plan — Solar Energy Website
+# Project Plan — Camarta Energy 
 
 ## Week 1
 
