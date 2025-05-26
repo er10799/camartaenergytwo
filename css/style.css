@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+}
+header {
+  margin: 0;
+  padding: 0;
+}
+.top-bar {
+  margin: 0;
+}
+
+.hero{
+    background-image: url(../img/hero-img.jpg);
+    background-size: cover;
+}
