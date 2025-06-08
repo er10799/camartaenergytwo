@@ -9,7 +9,54 @@ header {
   margin: 0;
 }
 
-.hero{
-    background-image: url(../img/hero-img.jpg);
-    background-size: cover;
+.hero {
+  display: flex;
+  align-items: center;      /* vertical center */
+  justify-content: flex-start; /* align to left */
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/hero-img.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+  color: white; /* default text color for contrast */
+}
+
+.hero-content {
+  margin-left: 5%;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.btn-consultation, .btn-hero-contact {
+  color: white;
+}
+
+.btn-consultation{
+  background-color: rgba(255, 166, 0);
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.btn-hero-contact{
+
+  background-color: rgba(255, 166, 0);
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.btn-consultation:hover,
+.btn-hero-contact:hover {
+  background-color: rgba(255, 166, 0, 0.8); /* slightly darker or more transparent if you like */
+  cursor: pointer;
 }
