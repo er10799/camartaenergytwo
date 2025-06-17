@@ -92,3 +92,7 @@ section — for distinct parts of the page, like Services, Projects, About, Cont
 main — for the main content area.
 footer — for the bottom info (copyright, contact info, etc.).
 article or div inside sections, if needed, for smaller content pieces.
+
+Good resource for getting placeholder pics:
+
+https://picsum.photos/
