@@ -22,7 +22,7 @@
   <body>
     <header>
       <!-- Top Info Bar -->
-      <div class="top-bar py-2" style="background-color: #4a4945">
+      <div class="top-bar py-2" style="background-color: #94928d">
         <div
           class="container d-flex justify-content-between align-items-center small"
         >
@@ -138,21 +138,119 @@
     </header>
 
     <main>
-      <section id="hero" class="p-4 bg-light hero">
-        <div class="container-fluid hero-content">
-          <h1 class="display-5 fw-bold text-white">
-            Solar that makes a difference.
-          </h1>
-          <button class="btn btn-lg btn-consultation me-3" type="button">
-            Request a consultation
-          </button>
-          <button class="btn btn-lg btn-hero-contact" type="button">
-            Contact us
-          </button>
+      <!-- HERO SECTION -->
+      <div
+        id="heroCarousel"
+        class="carousel slide mb-6"
+        data-bs-ride="carousel"
+        data-bs-interval="5000"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
-      </section>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <svg
+              class="bd-placeholder-img"
+              width="100%"
+              height="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="xMidYMid slice"
+            >
+              <rect width="100%" height="100%" fill="#777" />
+            </svg>
+            <!-- Changed here from container to container-fluid -->
+            <div class="container-fluid">
+              <div class="carousel-caption text-start">
+                <h1>First headline.</h1>
+                <p class="opacity-75">Some description for slide one.</p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#">Get started</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg
+              class="bd-placeholder-img"
+              width="100%"
+              height="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="xMidYMid slice"
+            >
+              <rect width="100%" height="100%" fill="#666" />
+            </svg>
+            <!-- Changed here from container to container-fluid -->
+            <div class="container-fluid">
+              <div class="carousel-caption">
+                <h1>Second headline.</h1>
+                <p>Another description here.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg
+              class="bd-placeholder-img"
+              width="100%"
+              height="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="xMidYMid slice"
+            >
+              <rect width="100%" height="100%" fill="#555" />
+            </svg>
+            <!-- Changed here from container to container-fluid -->
+            <div class="container-fluid">
+              <div class="carousel-caption text-end">
+                <h1>Final headline.</h1>
+                <p>Third piece of description here.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Browse</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-      <div class="container my-5">
+      <!-- JUMBOTRON SECTION -->
+
+      <!-- <div class="container my-5">
         <div class="p-5 text-center bg-body-tertiary rounded-3">
           <h1 class="text-body-emphasis">Basic jumbotron</h1>
           <p class="lead">
@@ -160,7 +258,11 @@
             <code>.container</code>, recreated with built-in utility classes.
           </p>
         </div>
-      </div>
+      </div> -->
+
+      <!-- END OF JUMBOTRON SECTION -->
+
+      <!-- END OF HERO SECTION -->
 
       <div class="container marketing">
         <!-- Three columns of text below the carousel -->
@@ -255,23 +357,19 @@
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading fw-normal lh-1">
-              Built on Trust. Powered by Experience.
-              <span class="text-body-secondary">The Camarta Commitment.</span>
+              Expert Installation. Reliable Results.
+              <span class="text-body-secondary">Quality you can trust.</span>
             </h2>
             <p>
-              Founded in 2019, Camarta Energy Inc. is a dedicated team of Master
-              and Journeyman Electricians committed to delivering high-quality
-              electrical and solar solutions across Western Canada. We
-              prioritize safety, customer service, and craftsmanship in every
-              project—no matter the size.
+              Our team of Master and Journeyman Electricians ensures every solar
+              system is installed with precision and care. We adhere to the
+              highest safety standards and industry best practices to deliver
+              durable, efficient systems that perform reliably for years.
             </p>
             <p>
-              Our mission is to provide homeowners and businesses with clean,
-              reliable energy through custom-designed solar systems tailored to
-              each client's unique needs. Whether you're looking to reduce your
-              energy costs, transition to renewable power, or invest in
-              long-term sustainability, you can count on Camarta Energy to
-              deliver professional service and trusted results.
+              From start to finish, Camarta Energy provides professional service
+              and support, giving you confidence in your investment and peace of
+              mind about your energy future.
             </p>
           </div>
           <div class="col-md-5">
@@ -286,13 +384,20 @@
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
             <h2 class="featurette-heading fw-normal lh-1">
-              Oh yeah, it’s that good.
-              <span class="text-body-secondary">See for yourself.</span>
+              Solar Made Simple
+              <span class="text-body-secondary"
+                >Custom solutions. Real savings.</span
+              >
             </h2>
-            <p class="lead">
-              Another featurette? Of course. More placeholder content here to
-              give you an idea of how this layout would work with some actual
-              real-world content in place.
+            <p>
+              At Camarta Energy, we specialize in designing solar power systems
+              tailored specifically to your property and energy needs. Whether
+              you're a homeowner or a business, our experienced electricians
+              manage every step — from initial consultation and system design to
+              professional installation and ongoing support. We make the
+              transition to clean energy easy, efficient, and cost-effective,
+              helping you maximize your energy savings while reducing your
+              carbon footprint.
             </p>
           </div>
           <div class="col-md-5 order-md-1">
@@ -307,14 +412,20 @@
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading fw-normal lh-1">
-              And lastly, this one.
-              <span class="text-body-secondary">Checkmate.</span>
+              Power Your Future
+              <span class="text-body-secondary"
+                >Clean energy. Lasting benefits.</span
+              >
             </h2>
-            <p class="lead">
-              And yes, this is the last block of representative placeholder
-              content. Again, not really intended to be actually read, simply
-              here to give you a better view of what this would look like with
-              some actual content. Your content.
+            <p>
+              Investing in solar energy isn’t just about lowering your
+              electricity bills today — it’s about securing a sustainable future
+              for you and generations to come. Our high-quality solar
+              installations provide reliable, renewable power designed to last
+              for decades. By choosing Camarta Energy, you’re protecting
+              yourself from rising utility costs and contributing to a healthier
+              planet, all while enjoying the long-term financial benefits of
+              clean, efficient energy.
             </p>
           </div>
           <div class="col-md-5">
@@ -328,22 +439,6 @@
         <hr class="featurette-divider" />
         <!-- /END THE FEATURETTES -->
       </div>
-
-      <section id="services">
-        <!-- Info about what services the company offers -->
-      </section>
-
-      <section id="projects">
-        <!-- Showcase of solar projects or portfolio -->
-      </section>
-
-      <section id="about">
-        <!-- About the company, history, mission -->
-      </section>
-
-      <section id="contact">
-        <!-- Contact form or details -->
-      </section>
     </main>
 
     <footer>
@@ -355,23 +450,27 @@
               <h5>Company</h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-                </li>
-                <li class="nav-item mb-2">
                   <a href="#" class="nav-link p-0 text-body-secondary"
-                    >Features</a
+                    >About Us</a
                   >
                 </li>
                 <li class="nav-item mb-2">
                   <a href="#" class="nav-link p-0 text-body-secondary"
-                    >Pricing</a
+                    >Careers</a
                   >
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                  <a href="#" class="nav-link p-0 text-body-secondary"
+                    >Referral Program</a
+                  >
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                  <a href="#" class="nav-link p-0 text-body-secondary"
+                    >Leave a Review</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">Blah</a>
                 </li>
               </ul>
             </div>
@@ -380,11 +479,11 @@
               <h5>Support</h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                  <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
                 </li>
                 <li class="nav-item mb-2">
                   <a href="#" class="nav-link p-0 text-body-secondary"
-                    >Features</a
+                    >Contact Us</a
                   >
                 </li>
                 <li class="nav-item mb-2">
@@ -409,20 +508,20 @@
                 </li>
                 <li class="nav-item mb-2">
                   <a href="#" class="nav-link p-0 text-body-secondary"
-                    >Features</a
+                    >Terms of Service</a
                   >
                 </li>
                 <li class="nav-item mb-2">
                   <a href="#" class="nav-link p-0 text-body-secondary"
-                    >Pricing</a
+                    >Privacy Policy</a
                   >
                 </li>
-                <li class="nav-item mb-2">
+                <!-- <li class="nav-item mb-2">
                   <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
                 </li>
                 <li class="nav-item mb-2">
                   <a href="#" class="nav-link p-0 text-body-secondary">About</a>
-                </li>
+                </li> -->
               </ul>
             </div>
 
