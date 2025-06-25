@@ -123,7 +123,13 @@ body {
 /* rtl:begin:remove */
 .featurette-heading {
   letter-spacing: -.05rem;
+} 
+.featurette-img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
 }
+
 
 /* rtl:end:remove */
 
