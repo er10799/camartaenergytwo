@@ -2,21 +2,19 @@
 
 ## TO DO
 
-Having issues with container
-
+- Fix container issue on homepage (Tested at work and it seems fine - need to look into this more)
+- Adjust carousel height for hero images
 
 ---
 
-# Notes
+## Notes
 
-## Which semantic HTML tags to use?
+- Use semantic HTML tags:
+  - `header` for top-of-page content like logo or navigation (often includes the Hero)
+  - `main` for the main content area
+  - `section` for distinct parts of the page, like Services, Projects, About, Contact
+  - `footer` for bottom info (copyright, contact info)
+  - `article` or `div` inside sections for smaller content blocks if needed
 
-header — for top-of-page content, like logo or navigation (often includes the Hero).
-section — for distinct parts of the page, like Services, Projects, About, Contact.
-main — for the main content area.
-footer — for the bottom info (copyright, contact info, etc.).
-article or div inside sections, if needed, for smaller content pieces.
-
-Good resource for getting placeholder pics:
-
-https://picsum.photos/
+- Good resource for placeholder images:
+  - [https://picsum.photos/](https://picsum.photos/)

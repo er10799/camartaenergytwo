@@ -17,7 +17,13 @@ header {
 }
 
 .carousel-item {
-  height: 32rem; /* Match Bootstrap */
+  /* This was matching bootstrap example height, but we 
+      need more height for aesthetic purposes */
+  /* height: 32rem;  */
+
+  /* Need to play around with this to get uniform and clean */
+  height: 45rem;
+
 }
 .carousel-caption h1 {
   font-size: 3rem; /* Slightly smaller heading */
