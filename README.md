@@ -10,6 +10,7 @@
 ## Notes
 
 - Use semantic HTML tags:
+
   - `header` for top-of-page content like logo or navigation (often includes the Hero)
   - `main` for the main content area
   - `section` for distinct parts of the page, like Services, Projects, About, Contact
@@ -18,3 +19,4 @@
 
 - Good resource for placeholder images:
   - [https://picsum.photos/](https://picsum.photos/)
+  - git log --oneline --graph
