@@ -5,6 +5,7 @@
 - Fix container issue on homepage (Tested at work and it seems fine - need to look into this more)
 - Adjust carousel height for hero images
 - Add more content to main page (bottom horizontal scrollable pics and reviews?)
+- Get idea from choclatier website
 
 ---
 
