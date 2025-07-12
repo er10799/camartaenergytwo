@@ -6,7 +6,7 @@
 - Adjust carousel height for hero images
 - Add more content to main page (bottom horizontal scrollable pics and reviews?)
 - Get idea from choclatier website (scrollable background and bottom scrollable piece as well).
-- Map out other pages
+- Map out other pages.
 
 ---
 
