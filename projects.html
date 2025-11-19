@@ -7,7 +7,7 @@
     <meta name="keywords" content="solar projects, solar installations, residential solar, commercial solar, solar portfolio" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -17,22 +17,26 @@
         display: inline-block;
         padding: 1rem 2.5rem;
         margin: 0 0.5rem;
-        border-radius: 50px;
+        border-radius: 8px;
         background: white;
         border: 2px solid #e0e0e0;
         color: var(--text-dark);
         font-weight: 600;
         cursor: pointer;
         transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       }
       .project-tab:hover {
-        border-color: var(--primary-grey);
+        border-color: var(--accent-orange);
         color: var(--primary-grey);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       }
       .project-tab.active {
-        background: linear-gradient(135deg, var(--primary-grey), var(--accent-orange));
+        background: var(--accent-orange);
         border-color: var(--accent-orange);
         color: white;
+        box-shadow: 0 4px 12px rgba(255,107,53,0.3);
       }
       .project-card {
         position: relative;
@@ -113,14 +117,7 @@
               </li>
               <li class="nav-item"><a class="nav-link" href="solar-information.html">Solar Information</a></li>
               <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="locationsDropdown" role="button" data-bs-toggle="dropdown">Locations</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="edmonton.html">Edmonton</a></li>
-                  <li><a class="dropdown-item" href="#">Calgary</a></li>
-                  <li><a class="dropdown-item" href="#">Red Deer</a></li>
-                </ul>
-              </li>
+              <li class="nav-item"><a class="nav-link" href="edmonton.html">Edmonton</a></li>
               <li class="nav-item ms-lg-3"><a class="btn btn-primary" href="index.html#quote">Get Free Quote</a></li>
             </ul>
           </div>
@@ -130,7 +127,7 @@
 
     <main>
       <!-- Hero Section -->
-      <section style="position: relative; height: 500px; overflow: hidden; background: #000;">
+      <section style="position: relative; height: 900px; overflow: hidden; background: #000;">
         <img src="./img/hero-2.avif" alt="Solar installation projects"
              style="width: 100%; height: 100%; object-fit: cover; opacity: 0.6;" />
         <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;
@@ -166,11 +163,11 @@
 
           <!-- Residential Projects -->
           <div class="tab-content-section active" id="residential">
-            <!-- Row 1: Large + Small -->
+            <!-- Row 1: 70% + 30% -->
             <div class="row mb-4">
-              <div class="col-lg-8 col-md-6 mb-4">
+              <div class="col-lg-8 col-md-12 mb-4">
                 <a href="project-detail.html" style="text-decoration: none; color: inherit;">
-                  <div class="project-card project-card-large">
+                  <div class="project-card" style="height: 400px;">
                     <img src="./img/hero-v2.avif" alt="Residential solar installation" />
                     <div class="project-overlay">
                       <div class="project-category">RESIDENTIAL</div>
@@ -183,7 +180,7 @@
 
               <div class="col-lg-4 col-md-6 mb-4">
                 <a href="project-detail.html" style="text-decoration: none; color: inherit;">
-                  <div class="project-card">
+                  <div class="project-card" style="height: 400px;">
                     <img src="./img/featurette-1.avif" alt="Residential solar installation" />
                     <div class="project-overlay">
                       <div class="project-category">RESIDENTIAL</div>
@@ -195,11 +192,11 @@
               </div>
             </div>
 
-            <!-- Row 2: Small + Large -->
+            <!-- Row 2: 40% + 30% + 30% -->
             <div class="row mb-4">
-              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="col-lg-5 col-md-6 mb-4">
                 <a href="project-detail.html" style="text-decoration: none; color: inherit;">
-                  <div class="project-card">
+                  <div class="project-card" style="height: 320px;">
                     <img src="./img/hero-3.avif" alt="Residential solar installation" />
                     <div class="project-overlay">
                       <div class="project-category">RESIDENTIAL</div>
@@ -210,30 +207,14 @@
                 </a>
               </div>
 
-              <div class="col-lg-8 col-md-6 mb-4">
+              <div class="col-lg-3 col-md-6 mb-4">
                 <a href="project-detail.html" style="text-decoration: none; color: inherit;">
-                  <div class="project-card project-card-large">
+                  <div class="project-card" style="height: 320px;">
                     <img src="./img/featurette-2.avif" alt="Residential solar installation" />
                     <div class="project-overlay">
                       <div class="project-category">RESIDENTIAL</div>
-                      <h4 style="font-weight: 700; margin-bottom: 0.5rem;">Sherwood Park Home</h4>
-                      <p style="opacity: 0.9; margin: 0;">7.8kW System • 24 Panels</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <!-- Row 3: Large + Small -->
-            <div class="row mb-4">
-              <div class="col-lg-8 col-md-6 mb-4">
-                <a href="project-detail.html" style="text-decoration: none; color: inherit;">
-                  <div class="project-card project-card-large">
-                    <img src="./img/hero-v2.avif" alt="Residential solar installation" />
-                    <div class="project-overlay">
-                      <div class="project-category">RESIDENTIAL</div>
-                      <h4 style="font-weight: 700; margin-bottom: 0.5rem;">St. Albert Residence</h4>
-                      <p style="opacity: 0.9; margin: 0;">9.1kW System • 28 Panels</p>
+                      <h4 style="font-weight: 700; margin-bottom: 0.5rem;">Sherwood Park</h4>
+                      <p style="opacity: 0.9; margin: 0;">7.8kW • 24 Panels</p>
                     </div>
                   </div>
                 </a>
@@ -241,7 +222,23 @@
 
               <div class="col-lg-4 col-md-6 mb-4">
                 <a href="project-detail.html" style="text-decoration: none; color: inherit;">
-                  <div class="project-card">
+                  <div class="project-card" style="height: 320px;">
+                    <img src="./img/hero-v2.avif" alt="Residential solar installation" />
+                    <div class="project-overlay">
+                      <div class="project-category">RESIDENTIAL</div>
+                      <h4 style="font-weight: 700; margin-bottom: 0.5rem;">St. Albert Home</h4>
+                      <p style="opacity: 0.9; margin: 0;">9.1kW • 28 Panels</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Row 3: 50% + 50% -->
+            <div class="row mb-4">
+              <div class="col-lg-6 col-md-6 mb-4">
+                <a href="project-detail.html" style="text-decoration: none; color: inherit;">
+                  <div class="project-card" style="height: 350px;">
                     <img src="./img/hero-2.avif" alt="Residential solar installation" />
                     <div class="project-overlay">
                       <div class="project-category">RESIDENTIAL</div>
@@ -251,16 +248,71 @@
                   </div>
                 </a>
               </div>
+
+              <div class="col-lg-6 col-md-6 mb-4">
+                <a href="project-detail.html" style="text-decoration: none; color: inherit;">
+                  <div class="project-card" style="height: 350px;">
+                    <img src="./img/featurette-1.avif" alt="Residential solar installation" />
+                    <div class="project-overlay">
+                      <div class="project-category">RESIDENTIAL</div>
+                      <h4 style="font-weight: 700; margin-bottom: 0.5rem;">Fort Saskatchewan</h4>
+                      <p style="opacity: 0.9; margin: 0;">7.2kW System • 22 Panels</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Row 4: 30% + 40% + 30% (varied split) -->
+            <div class="row mb-4">
+              <div class="col-lg-3 col-md-6 mb-4">
+                <a href="project-detail.html" style="text-decoration: none; color: inherit;">
+                  <div class="project-card" style="height: 300px;">
+                    <img src="./img/hero-3.avif" alt="Residential solar installation" />
+                    <div class="project-overlay">
+                      <div class="project-category">RESIDENTIAL</div>
+                      <h4 style="font-weight: 700; margin-bottom: 0.5rem;">Leduc Home</h4>
+                      <p style="opacity: 0.9; margin: 0;">5.5kW • 17 Panels</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-lg-6 col-md-6 mb-4">
+                <a href="project-detail.html" style="text-decoration: none; color: inherit;">
+                  <div class="project-card" style="height: 300px;">
+                    <img src="./img/featurette-2.avif" alt="Residential solar installation" />
+                    <div class="project-overlay">
+                      <div class="project-category">RESIDENTIAL</div>
+                      <h4 style="font-weight: 700; margin-bottom: 0.5rem;">Spruce Grove Residence</h4>
+                      <p style="opacity: 0.9; margin: 0;">8.8kW System • 27 Panels</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <a href="project-detail.html" style="text-decoration: none; color: inherit;">
+                  <div class="project-card" style="height: 300px;">
+                    <img src="./img/hero-v2.avif" alt="Residential solar installation" />
+                    <div class="project-overlay">
+                      <div class="project-category">RESIDENTIAL</div>
+                      <h4 style="font-weight: 700; margin-bottom: 0.5rem;">Stony Plain</h4>
+                      <p style="opacity: 0.9; margin: 0;">6.4kW • 20 Panels</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
 
           <!-- Commercial Projects -->
           <div class="tab-content-section" id="commercial">
-            <!-- Row 1: Large + Small -->
+            <!-- Row 1: 70% + 30% -->
             <div class="row mb-4">
-              <div class="col-lg-8 col-md-6 mb-4">
+              <div class="col-lg-8 col-md-12 mb-4">
                 <a href="project-caernarvon.html" style="text-decoration: none; color: inherit;">
-                  <div class="project-card project-card-large">
+                  <div class="project-card" style="height: 400px;">
                     <img src="./img/hero-2.avif" alt="Caernarvon School Solar Panels" />
                     <div class="project-overlay">
                       <div class="project-category">COMMERCIAL</div>
@@ -273,7 +325,7 @@
 
               <div class="col-lg-4 col-md-6 mb-4">
                 <a href="project-detail.html" style="text-decoration: none; color: inherit;">
-                  <div class="project-card">
+                  <div class="project-card" style="height: 400px;">
                     <img src="./img/featurette-1.avif" alt="Commercial solar installation" />
                     <div class="project-overlay">
                       <div class="project-category">COMMERCIAL</div>
@@ -285,11 +337,11 @@
               </div>
             </div>
 
-            <!-- Row 2: Small + Large -->
+            <!-- Row 2: 40% + 30% + 30% -->
             <div class="row mb-4">
-              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="col-lg-5 col-md-6 mb-4">
                 <a href="project-detail.html" style="text-decoration: none; color: inherit;">
-                  <div class="project-card">
+                  <div class="project-card" style="height: 320px;">
                     <img src="./img/hero-3.avif" alt="Commercial solar installation" />
                     <div class="project-overlay">
                       <div class="project-category">COMMERCIAL</div>
@@ -300,30 +352,14 @@
                 </a>
               </div>
 
-              <div class="col-lg-8 col-md-6 mb-4">
+              <div class="col-lg-3 col-md-6 mb-4">
                 <a href="project-detail.html" style="text-decoration: none; color: inherit;">
-                  <div class="project-card project-card-large">
+                  <div class="project-card" style="height: 320px;">
                     <img src="./img/featurette-2.avif" alt="Commercial solar installation" />
                     <div class="project-overlay">
                       <div class="project-category">COMMERCIAL</div>
-                      <h4 style="font-weight: 700; margin-bottom: 0.5rem;">Retail Shopping Center</h4>
-                      <p style="opacity: 0.9; margin: 0;">210kW System • 640 Panels</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <!-- Row 3: Large + Small -->
-            <div class="row mb-4">
-              <div class="col-lg-8 col-md-6 mb-4">
-                <a href="project-detail.html" style="text-decoration: none; color: inherit;">
-                  <div class="project-card project-card-large">
-                    <img src="./img/hero-v2.avif" alt="Commercial solar installation" />
-                    <div class="project-overlay">
-                      <div class="project-category">COMMERCIAL</div>
-                      <h4 style="font-weight: 700; margin-bottom: 0.5rem;">Manufacturing Facility</h4>
-                      <p style="opacity: 0.9; margin: 0;">340kW System • 1,040 Panels</p>
+                      <h4 style="font-weight: 700; margin-bottom: 0.5rem;">Shopping Center</h4>
+                      <p style="opacity: 0.9; margin: 0;">210kW • 640 Panels</p>
                     </div>
                   </div>
                 </a>
@@ -331,12 +367,83 @@
 
               <div class="col-lg-4 col-md-6 mb-4">
                 <a href="project-detail.html" style="text-decoration: none; color: inherit;">
-                  <div class="project-card">
+                  <div class="project-card" style="height: 320px;">
+                    <img src="./img/hero-v2.avif" alt="Commercial solar installation" />
+                    <div class="project-overlay">
+                      <div class="project-category">COMMERCIAL</div>
+                      <h4 style="font-weight: 700; margin-bottom: 0.5rem;">Manufacturing Facility</h4>
+                      <p style="opacity: 0.9; margin: 0;">340kW • 1,040 Panels</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Row 3: 50% + 50% -->
+            <div class="row mb-4">
+              <div class="col-lg-6 col-md-6 mb-4">
+                <a href="project-detail.html" style="text-decoration: none; color: inherit;">
+                  <div class="project-card" style="height: 350px;">
                     <img src="./img/hero-2.avif" alt="Commercial solar installation" />
                     <div class="project-overlay">
                       <div class="project-category">COMMERCIAL</div>
                       <h4 style="font-weight: 700; margin-bottom: 0.5rem;">Agricultural Operation</h4>
                       <p style="opacity: 0.9; margin: 0;">55kW System • 168 Panels</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-lg-6 col-md-6 mb-4">
+                <a href="project-detail.html" style="text-decoration: none; color: inherit;">
+                  <div class="project-card" style="height: 350px;">
+                    <img src="./img/featurette-1.avif" alt="Commercial solar installation" />
+                    <div class="project-overlay">
+                      <div class="project-category">COMMERCIAL</div>
+                      <h4 style="font-weight: 700; margin-bottom: 0.5rem;">Industrial Park</h4>
+                      <p style="opacity: 0.9; margin: 0;">450kW System • 1,380 Panels</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Row 4: 30% + 40% + 30% (varied split) -->
+            <div class="row mb-4">
+              <div class="col-lg-3 col-md-6 mb-4">
+                <a href="project-detail.html" style="text-decoration: none; color: inherit;">
+                  <div class="project-card" style="height: 300px;">
+                    <img src="./img/hero-3.avif" alt="Commercial solar installation" />
+                    <div class="project-overlay">
+                      <div class="project-category">COMMERCIAL</div>
+                      <h4 style="font-weight: 700; margin-bottom: 0.5rem;">Gym Facility</h4>
+                      <p style="opacity: 0.9; margin: 0;">42kW • 128 Panels</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-lg-6 col-md-6 mb-4">
+                <a href="project-detail.html" style="text-decoration: none; color: inherit;">
+                  <div class="project-card" style="height: 300px;">
+                    <img src="./img/featurette-2.avif" alt="Commercial solar installation" />
+                    <div class="project-overlay">
+                      <div class="project-category">COMMERCIAL</div>
+                      <h4 style="font-weight: 700; margin-bottom: 0.5rem;">Hotel & Conference Center</h4>
+                      <p style="opacity: 0.9; margin: 0;">290kW System • 888 Panels</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <a href="project-detail.html" style="text-decoration: none; color: inherit;">
+                  <div class="project-card" style="height: 300px;">
+                    <img src="./img/hero-v2.avif" alt="Commercial solar installation" />
+                    <div class="project-overlay">
+                      <div class="project-category">COMMERCIAL</div>
+                      <h4 style="font-weight: 700; margin-bottom: 0.5rem;">Dental Clinic</h4>
+                      <p style="opacity: 0.9; margin: 0;">18kW • 55 Panels</p>
                     </div>
                   </div>
                 </a>
@@ -392,8 +499,6 @@
               <h5>Locations</h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2"><a href="edmonton.html" class="nav-link p-0">Edmonton</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Calgary</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Red Deer</a></li>
               </ul>
             </div>
             <div class="col-lg-2 col-md-6 mb-4">

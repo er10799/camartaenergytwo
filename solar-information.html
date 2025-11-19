@@ -7,7 +7,7 @@
     <meta name="keywords" content="solar energy, solar panels FAQ, solar articles, solar information" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -45,14 +45,7 @@
               </li>
               <li class="nav-item"><a class="nav-link active" href="solar-information.html">Solar Information</a></li>
               <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="locationsDropdown" role="button" data-bs-toggle="dropdown">Locations</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="edmonton.html">Edmonton</a></li>
-                  <li><a class="dropdown-item" href="#">Calgary</a></li>
-                  <li><a class="dropdown-item" href="#">Red Deer</a></li>
-                </ul>
-              </li>
+              <li class="nav-item"><a class="nav-link" href="edmonton.html">Edmonton</a></li>
               <li class="nav-item ms-lg-3"><a class="btn btn-primary" href="index.html#quote">Get Free Quote</a></li>
             </ul>
           </div>
@@ -62,7 +55,7 @@
 
     <main>
       <!-- Hero Section -->
-      <section style="position: relative; height: 500px; overflow: hidden; background: #000;">
+      <section style="position: relative; height: 900px; overflow: hidden; background: #000;">
         <img src="./img/hero-v2.avif" alt="Solar energy information and education"
              style="width: 100%; height: 100%; object-fit: cover; opacity: 0.6;" />
         <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;
@@ -91,93 +84,288 @@
               Frequently Asked Questions
             </h2>
             <p style="font-size: 1.2rem; color: var(--text-light); max-width: 800px; margin: 1rem auto 0;">
-              The top 5 questions we receive about solar panels and solar energy
+              Browse our most common questions by category
             </p>
           </div>
 
           <div class="row">
-            <div class="col-lg-10 offset-lg-1">
-              <div style="background: white; border: 1px solid #e0e0e0; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden;">
-                <div style="padding: 2rem;">
-                  <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">
-                    <i class="bi bi-question-circle-fill me-2" style="color: var(--accent-orange);"></i>
-                    How long do solar panels last?
-                  </h4>
-                  <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
-                    Solar panels are extremely durable and typically last 25-30 years or more. Most manufacturers offer
-                    25-year performance warranties guaranteeing at least 80-85% of original output after 25 years. The panels
-                    don't "stop working" after 25 years—they simply produce slightly less power. With proper maintenance,
-                    solar panels can continue generating electricity for 40+ years.
-                  </p>
+            <!-- FAQ Categories Sidebar -->
+            <div class="col-lg-3 mb-4">
+              <div style="position: sticky; top: 20px;">
+                <h5 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1.5rem;">Categories</h5>
+                <div class="faq-category active" data-category="installation"
+                     style="padding: 1rem 1.5rem; border-radius: 12px; margin-bottom: 0.75rem; cursor: pointer;
+                            background: var(--accent-orange); color: white; font-weight: 600; transition: all 0.3s ease;">
+                  <i class="bi bi-tools me-2"></i>Installation & Maintenance
+                </div>
+                <div class="faq-category" data-category="cost"
+                     style="padding: 1rem 1.5rem; border-radius: 12px; margin-bottom: 0.75rem; cursor: pointer;
+                            background: var(--accent-light); color: var(--primary-dark); font-weight: 600; transition: all 0.3s ease;">
+                  <i class="bi bi-cash-stack me-2"></i>Cost & Benefits
+                </div>
+                <div class="faq-category" data-category="operation"
+                     style="padding: 1rem 1.5rem; border-radius: 12px; cursor: pointer;
+                            background: var(--accent-light); color: var(--primary-dark); font-weight: 600; transition: all 0.3s ease;">
+                  <i class="bi bi-lightning-charge me-2"></i>System Operation
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Content -->
+            <div class="col-lg-9">
+              <!-- Installation & Maintenance FAQs -->
+              <div class="faq-content active" id="installation">
+                <div style="background: white; border: 1px solid #e0e0e0; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden;">
+                  <div style="padding: 2rem;">
+                    <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">
+                      <i class="bi bi-question-circle-fill me-2" style="color: var(--accent-orange);"></i>
+                      How long does installation typically take?
+                    </h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      Residential installations typically take 1-3 days depending on system size and roof complexity. Commercial
+                      installations take 1-4 weeks depending on scale. The permitting process can add 2-6 weeks before installation.
+                      We handle all permitting and utility paperwork for you.
+                    </p>
+                  </div>
+                </div>
+
+                <div style="background: white; border: 1px solid #e0e0e0; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden;">
+                  <div style="padding: 2rem;">
+                    <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">
+                      <i class="bi bi-question-circle-fill me-2" style="color: var(--accent-orange);"></i>
+                      How much maintenance do solar panels require?
+                    </h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      Solar panels require minimal maintenance. Rain naturally cleans panels in most cases. Professional cleaning
+                      every 1-2 years optimizes performance. Annual inspections check electrical connections and mounting hardware.
+                      Monitor system performance through your app to ensure optimal operation.
+                    </p>
+                  </div>
+                </div>
+
+                <div style="background: white; border: 1px solid #e0e0e0; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden;">
+                  <div style="padding: 2rem;">
+                    <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">
+                      <i class="bi bi-question-circle-fill me-2" style="color: var(--accent-orange);"></i>
+                      Will solar panels damage my roof?
+                    </h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      When installed properly by certified professionals, solar panels will not damage your roof. They actually
+                      protect the covered area from weather. We use specialized mounting with flashing and sealants that prevent
+                      water intrusion. If your roof needs repairs, address them before solar installation.
+                    </p>
+                  </div>
+                </div>
+
+                <div style="background: white; border: 1px solid #e0e0e0; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden;">
+                  <div style="padding: 2rem;">
+                    <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">
+                      <i class="bi bi-question-circle-fill me-2" style="color: var(--accent-orange);"></i>
+                      How long do solar panels last?
+                    </h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      Solar panels typically last 25-30 years or more. Most manufacturers offer 25-year performance warranties
+                      guaranteeing at least 80-85% of original output. Panels don't "stop" after 25 years—they just produce
+                      slightly less power. With proper maintenance, panels can generate electricity for 40+ years.
+                    </p>
+                  </div>
+                </div>
+
+                <div style="background: white; border: 1px solid #e0e0e0; border-radius: 16px; overflow: hidden;">
+                  <div style="padding: 2rem;">
+                    <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">
+                      <i class="bi bi-question-circle-fill me-2" style="color: var(--accent-orange);"></i>
+                      What warranty coverage do you provide?
+                    </h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      We provide comprehensive 25-year warranties covering equipment, workmanship, and performance. Solar panels
+                      have 25-year manufacturer warranties, inverters typically 10-25 years depending on model. Our installation
+                      workmanship is guaranteed for 25 years—among the best in the industry.
+                    </p>
+                  </div>
                 </div>
               </div>
 
-              <div style="background: white; border: 1px solid #e0e0e0; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden;">
-                <div style="padding: 2rem;">
-                  <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">
-                    <i class="bi bi-question-circle-fill me-2" style="color: var(--accent-orange);"></i>
-                    Do solar panels work in winter or on cloudy days?
-                  </h4>
-                  <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
-                    Yes! Solar panels work in winter and on cloudy days, though at reduced capacity. They need light, not heat,
-                    to generate electricity. In fact, solar panels are more efficient in cooler temperatures. In Alberta,
-                    solar panels produce excellent energy year-round. Winter production is lower due to shorter days and
-                    lower sun angles, but annual production remains strong. Snow typically slides off angled panels or
-                    melts quickly due to the dark panel surface.
-                  </p>
+              <!-- Cost & Benefits FAQs -->
+              <div class="faq-content" id="cost" style="display: none;">
+                <div style="background: white; border: 1px solid #e0e0e0; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden;">
+                  <div style="padding: 2rem;">
+                    <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">
+                      <i class="bi bi-question-circle-fill me-2" style="color: var(--accent-orange);"></i>
+                      How much does a solar system cost?
+                    </h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      Residential systems in Western Canada typically range from $15,000-$30,000 before incentives, depending on
+                      system size and equipment quality. Commercial systems range from $50,000 to several hundred thousand dollars.
+                      After federal and provincial incentives, net costs are significantly lower. Financing options available.
+                    </p>
+                  </div>
+                </div>
+
+                <div style="background: white; border: 1px solid #e0e0e0; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden;">
+                  <div style="padding: 2rem;">
+                    <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">
+                      <i class="bi bi-question-circle-fill me-2" style="color: var(--accent-orange);"></i>
+                      What is the payback period for solar?
+                    </h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      Most residential systems in Alberta have a payback period of 7-10 years. Commercial systems often see
+                      5-8 year payback due to higher electricity rates and better tax treatment. After payback, you enjoy
+                      15-20+ years of free electricity. ROI typically ranges from 10-25% annually.
+                    </p>
+                  </div>
+                </div>
+
+                <div style="background: white; border: 1px solid #e0e0e0; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden;">
+                  <div style="padding: 2rem;">
+                    <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">
+                      <i class="bi bi-question-circle-fill me-2" style="color: var(--accent-orange);"></i>
+                      Are there government incentives available?
+                    </h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      Yes! Federal programs like the Canada Greener Homes Grant offer up to $5,000 for residential solar.
+                      Commercial installations can access accelerated CCA depreciation. Municipal and utility rebates vary by
+                      location. We help identify and apply for all available incentives to maximize your savings.
+                    </p>
+                  </div>
+                </div>
+
+                <div style="background: white; border: 1px solid #e0e0e0; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden;">
+                  <div style="padding: 2rem;">
+                    <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">
+                      <i class="bi bi-question-circle-fill me-2" style="color: var(--accent-orange);"></i>
+                      Will solar increase my property value?
+                    </h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      Studies show solar panels increase property values by 3-4% on average. Homes with solar sell faster and
+                      for premium prices. Buyers value lower energy costs and environmental benefits. Commercial properties see
+                      improved valuations and lower operating costs, making them more attractive to tenants and buyers.
+                    </p>
+                  </div>
+                </div>
+
+                <div style="background: white; border: 1px solid #e0e0e0; border-radius: 16px; overflow: hidden;">
+                  <div style="padding: 2rem;">
+                    <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">
+                      <i class="bi bi-question-circle-fill me-2" style="color: var(--accent-orange);"></i>
+                      How much can I save on electricity bills?
+                    </h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      Most residential customers save 50-90% on electricity bills depending on system size and usage patterns.
+                      Over 25 years, typical savings range from $30,000-$80,000. Commercial facilities often save even more due
+                      to higher consumption and time-of-use rate structures. Savings increase as electricity rates rise over time.
+                    </p>
+                  </div>
                 </div>
               </div>
 
-              <div style="background: white; border: 1px solid #e0e0e0; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden;">
-                <div style="padding: 2rem;">
-                  <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">
-                    <i class="bi bi-question-circle-fill me-2" style="color: var(--accent-orange);"></i>
-                    What happens to solar power when the grid goes down?
-                  </h4>
-                  <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
-                    Standard grid-tied solar systems automatically shut down during power outages for safety reasons—this
-                    prevents electricity from back-feeding into the grid and potentially harming utility workers. If you want
-                    backup power during outages, you need to add battery storage to your system. With batteries, your solar
-                    panels can continue powering your home during grid outages, providing true energy independence.
-                  </p>
+              <!-- System Operation FAQs -->
+              <div class="faq-content" id="operation" style="display: none;">
+                <div style="background: white; border: 1px solid #e0e0e0; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden;">
+                  <div style="padding: 2rem;">
+                    <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">
+                      <i class="bi bi-question-circle-fill me-2" style="color: var(--accent-orange);"></i>
+                      Do solar panels work in winter or on cloudy days?
+                    </h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      Yes! Panels work year-round, though at reduced capacity in winter and cloudy weather. They need light, not
+                      heat. Alberta gets excellent annual solar production. Winter has lower output due to shorter days, but snow
+                      typically slides off angled panels. Solar panels are actually more efficient in cooler temperatures.
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              <div style="background: white; border: 1px solid #e0e0e0; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden;">
-                <div style="padding: 2rem;">
-                  <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">
-                    <i class="bi bi-question-circle-fill me-2" style="color: var(--accent-orange);"></i>
-                    How much maintenance do solar panels require?
-                  </h4>
-                  <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
-                    Solar panels require minimal maintenance. Rain naturally cleans panels in most cases, though professional
-                    cleaning every 1-2 years can optimize performance. Annual inspections are recommended to check electrical
-                    connections, mounting hardware, and inverter operation. Most maintenance involves monitoring system
-                    performance through your inverter or monitoring app to ensure everything operates correctly. Snow removal
-                    is rarely needed as panels shed snow naturally.
-                  </p>
+                <div style="background: white; border: 1px solid #e0e0e0; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden;">
+                  <div style="padding: 2rem;">
+                    <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">
+                      <i class="bi bi-question-circle-fill me-2" style="color: var(--accent-orange);"></i>
+                      What happens during a power outage?
+                    </h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      Standard grid-tied systems automatically shut down during outages for safety—preventing back-feed to the
+                      grid that could harm utility workers. For backup power, add battery storage to your system. With batteries,
+                      solar panels continue powering your home during outages, providing energy independence.
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              <div style="background: white; border: 1px solid #e0e0e0; border-radius: 16px; overflow: hidden;">
-                <div style="padding: 2rem;">
-                  <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">
-                    <i class="bi bi-question-circle-fill me-2" style="color: var(--accent-orange);"></i>
-                    Will solar panels damage my roof?
-                  </h4>
-                  <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
-                    When installed properly by certified professionals, solar panels will not damage your roof. In fact, they
-                    can protect the covered portion from weather exposure. We use specialized mounting systems with flashing
-                    and sealants that prevent water intrusion. Professional installers assess roof condition before installation
-                    and ensure your roof can support the system weight (solar panels are surprisingly light—about 2-4 lbs per
-                    square foot). If your roof needs repairs or replacement, it's best to address that before installing solar.
-                  </p>
+                <div style="background: white; border: 1px solid #e0e0e0; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden;">
+                  <div style="padding: 2rem;">
+                    <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">
+                      <i class="bi bi-question-circle-fill me-2" style="color: var(--accent-orange);"></i>
+                      How much roof space do I need?
+                    </h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      A typical residential system needs 300-600 square feet of south-facing roof space. Each solar panel is
+                      about 18 square feet. West and east-facing roofs work well too, though slightly less efficient than south.
+                      We assess your specific roof during consultation to optimize panel placement for maximum production.
+                    </p>
+                  </div>
+                </div>
+
+                <div style="background: white; border: 1px solid #e0e0e0; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden;">
+                  <div style="padding: 2rem;">
+                    <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">
+                      <i class="bi bi-question-circle-fill me-2" style="color: var(--accent-orange);"></i>
+                      Is my home suitable for solar?
+                    </h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      Most homes are suitable! Ideal conditions include south-facing roof with minimal shade, good structural
+                      condition, and adequate space. However, we successfully install on east, west, and even north-facing roofs.
+                      Ground-mount systems work if roof isn't suitable. Free consultation includes suitability assessment.
+                    </p>
+                  </div>
+                </div>
+
+                <div style="background: white; border: 1px solid #e0e0e0; border-radius: 16px; overflow: hidden;">
+                  <div style="padding: 2rem;">
+                    <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">
+                      <i class="bi bi-question-circle-fill me-2" style="color: var(--accent-orange);"></i>
+                      Can I add more panels later?
+                    </h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      Yes! Systems can be expanded as your needs grow. Consider planning for expansion during initial design—it's
+                      more cost-effective than retrofitting. Common scenarios: adding EV charging, installing heat pump, or
+                      increased consumption. Battery storage can also be added to existing systems for backup power capability.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <script>
+        // FAQ Category Switching
+        document.querySelectorAll('.faq-category').forEach(button => {
+          button.addEventListener('click', function() {
+            // Remove active from all categories
+            document.querySelectorAll('.faq-category').forEach(cat => {
+              cat.classList.remove('active');
+              cat.style.background = 'var(--accent-light)';
+              cat.style.color = 'var(--primary-dark)';
+            });
+
+            // Add active to clicked category
+            this.classList.add('active');
+            this.style.background = 'var(--accent-orange)';
+            this.style.color = 'white';
+
+            // Hide all FAQ content
+            document.querySelectorAll('.faq-content').forEach(content => {
+              content.classList.remove('active');
+              content.style.display = 'none';
+            });
+
+            // Show selected FAQ content
+            const category = this.getAttribute('data-category');
+            const selectedContent = document.getElementById(category);
+            selectedContent.classList.add('active');
+            selectedContent.style.display = 'block';
+          });
+        });
+      </script>
 
       <!-- Solar Cost & ROI Section -->
       <section style="padding: 5rem 0; background: linear-gradient(135deg, #f8f9fa, var(--accent-light));">
@@ -215,7 +403,7 @@
             <div class="col-lg-4 mb-4">
               <div style="background: white; padding: 2.5rem; border-radius: 16px; height: 100%; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
                 <div style="width: 80px; height: 80px; border-radius: 50%;
-                            background: linear-gradient(135deg, var(--primary-grey), var(--accent-orange));
+                            background: var(--accent-orange);
                             color: white; display: flex; align-items: center; justify-content: center;
                             margin: 0 auto 1.5rem; font-size: 2.5rem;">
                   <i class="bi bi-calendar-check"></i>
@@ -230,7 +418,7 @@
             <div class="col-lg-4 mb-4">
               <div style="background: white; padding: 2.5rem; border-radius: 16px; height: 100%; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
                 <div style="width: 80px; height: 80px; border-radius: 50%;
-                            background: linear-gradient(135deg, var(--primary-grey), var(--accent-orange));
+                            background: var(--accent-orange);
                             color: white; display: flex; align-items: center; justify-content: center;
                             margin: 0 auto 1.5rem; font-size: 2.5rem;">
                   <i class="bi bi-piggy-bank"></i>
@@ -245,7 +433,7 @@
             <div class="col-lg-4 mb-4">
               <div style="background: white; padding: 2.5rem; border-radius: 16px; height: 100%; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
                 <div style="width: 80px; height: 80px; border-radius: 50%;
-                            background: linear-gradient(135deg, var(--primary-grey), var(--accent-orange));
+                            background: var(--accent-orange);
                             color: white; display: flex; align-items: center; justify-content: center;
                             margin: 0 auto 1.5rem; font-size: 2.5rem;">
                   <i class="bi bi-graph-up-arrow"></i>
