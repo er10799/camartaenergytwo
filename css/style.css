@@ -56,7 +56,7 @@ header {
 .nav-link {
   color: var(--text-dark) !important;
   font-weight: 500;
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   transition: color 0.3s ease;
 }
 
@@ -100,7 +100,7 @@ header {
 }
 
 .carousel-item {
-  height: 600px;
+  height: 900px;
   position: relative;
 }
 
