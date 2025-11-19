@@ -56,136 +56,476 @@
     </header>
 
     <main>
-      <section style="background: linear-gradient(135deg, var(--primary-blue), var(--primary-dark)); color: white; padding: 4rem 0 3rem;">
-        <div class="container">
-          <h1 style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem;">Free Solar Consultation</h1>
-          <p style="font-size: 1.3rem; opacity: 0.95;">Discover how much you can save with a no-obligation, expert solar assessment</p>
+      <!-- Hero Section -->
+      <section style="position: relative; height: 600px; overflow: hidden; background: #000;">
+        <img src="./img/hero-3.avif" alt="Solar energy consultation and planning"
+             style="width: 100%; height: 100%; object-fit: cover; opacity: 0.6;" />
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+                    background: linear-gradient(to right, rgba(0,61,122,0.88), rgba(0,102,204,0.5));
+                    display: flex; align-items: center;">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <h1 style="color: white; font-size: 3.5rem; font-weight: 700; margin-bottom: 1.5rem;">
+                  Free Solar Consultation<br>No Obligation, Just Answers
+                </h1>
+                <p style="color: white; font-size: 1.4rem; margin-bottom: 2rem; line-height: 1.6;">
+                  Get expert guidance on your solar potential, accurate savings projections, and transparent pricing—all with zero pressure to buy.
+                </p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                  <a href="#consultation-form" class="btn btn-lg"
+                     style="background: var(--accent-green); border: none; color: white; padding: 1rem 2.5rem; font-weight: 600;">
+                    Schedule Free Consultation
+                  </a>
+                  <a href="tel:+18005551234" class="btn btn-lg btn-outline-light" style="padding: 1rem 2.5rem; font-weight: 600;">
+                    <i class="bi bi-telephone-fill me-2"></i>Call Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="marketing">
+      <!-- Why Get a Consultation -->
+      <section style="padding: 5rem 0; background: white;">
         <div class="container">
-          <div class="row align-items-center mb-5">
-            <div class="col-lg-6 mb-4">
-              <img src="./img/hero-3.avif" alt="Solar consultation" class="img-fluid" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);" />
-            </div>
-            <div class="col-lg-6 mb-4">
-              <h3 class="mb-4" style="color: var(--primary-dark); font-weight: 700;">Why Schedule a Consultation?</h3>
-              <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-light);">
-                Going solar is a significant decision, and you deserve accurate, honest information. Our free consultation
-                service provides a comprehensive analysis of your property's solar potential without any pressure or obligation.
-              </p>
-              <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-light);">
-                Whether you're just exploring the idea or ready to move forward, we'll provide the insights you need to
-                make an informed decision about solar energy for your home or business.
-              </p>
-            </div>
+          <div class="section-heading text-center mb-5">
+            <h2 style="color: var(--primary-dark); font-size: 2.5rem; font-weight: 700;">
+              Why Schedule a Free Solar Consultation?
+            </h2>
+            <p style="font-size: 1.2rem; color: var(--text-light); max-width: 800px; margin: 1rem auto 0;">
+              Going solar is a significant investment. You deserve accurate information and honest guidance before making
+              any decisions. Our free consultation provides everything you need to make an informed choice.
+            </p>
           </div>
 
-          <div class="row mb-5">
-            <div class="col-12 mb-4">
-              <h3 class="text-center mb-4" style="color: var(--primary-dark); font-weight: 700;">What's Included in Your Free Consultation</h3>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div style="background: var(--accent-light); padding: 2.5rem; border-radius: 16px; height: 100%; text-align: center;">
+                <div style="width: 100px; height: 100px; border-radius: 50%;
+                            background: linear-gradient(135deg, var(--primary-blue), var(--accent-green));
+                            color: white; display: flex; align-items: center; justify-content: center;
+                            margin: 0 auto 1.5rem; font-size: 3rem;">
+                  <i class="bi bi-question-circle"></i>
+                </div>
+                <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">Understand If Solar Is Right for You</h4>
+                <p style="color: var(--text-light); line-height: 1.8;">
+                  Not every property is ideal for solar. We'll honestly tell you if your home or business is a good
+                  candidate—and if not, we'll explain why and what alternatives exist.
+                </p>
+              </div>
             </div>
-            <div class="col-md-6 mb-4">
-              <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div style="background: var(--accent-light); padding: 2.5rem; border-radius: 16px; height: 100%; text-align: center;">
+                <div style="width: 100px; height: 100px; border-radius: 50%;
+                            background: linear-gradient(135deg, var(--primary-blue), var(--accent-green));
+                            color: white; display: flex; align-items: center; justify-content: center;
+                            margin: 0 auto 1.5rem; font-size: 3rem;">
+                  <i class="bi bi-calculator"></i>
+                </div>
+                <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">Get Accurate Savings Estimates</h4>
+                <p style="color: var(--text-light); line-height: 1.8;">
+                  Online calculators can't account for shading, roof pitch, local weather, or your actual energy usage.
+                  Our analysis uses your real utility bills and site conditions for precise projections.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div style="background: var(--accent-light); padding: 2.5rem; border-radius: 16px; height: 100%; text-align: center;">
+                <div style="width: 100px; height: 100px; border-radius: 50%;
+                            background: linear-gradient(135deg, var(--primary-blue), var(--accent-green));
+                            color: white; display: flex; align-items: center; justify-content: center;
+                            margin: 0 auto 1.5rem; font-size: 3rem;">
+                  <i class="bi bi-piggy-bank"></i>
+                </div>
+                <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">Explore Financial Options</h4>
+                <p style="color: var(--text-light); line-height: 1.8;">
+                  Learn about all available incentives, rebates, tax credits, and financing options. We help you understand
+                  the true cost and identify the payment plan that fits your budget.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div style="background: var(--accent-light); padding: 2.5rem; border-radius: 16px; height: 100%; text-align: center;">
+                <div style="width: 100px; height: 100px; border-radius: 50%;
+                            background: linear-gradient(135deg, var(--primary-blue), var(--accent-green));
+                            color: white; display: flex; align-items: center; justify-content: center;
+                            margin: 0 auto 1.5rem; font-size: 3rem;">
+                  <i class="bi bi-house-check"></i>
+                </div>
+                <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">See What's Possible for Your Property</h4>
+                <p style="color: var(--text-light); line-height: 1.8;">
+                  We assess your roof space, orientation, shading, and electrical service to design a system optimized
+                  for maximum energy production and return on investment.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div style="background: var(--accent-light); padding: 2.5rem; border-radius: 16px; height: 100%; text-align: center;">
+                <div style="width: 100px; height: 100px; border-radius: 50%;
+                            background: linear-gradient(135deg, var(--primary-blue), var(--accent-green));
+                            color: white; display: flex; align-items: center; justify-content: center;
+                            margin: 0 auto 1.5rem; font-size: 3rem;">
+                  <i class="bi bi-chat-dots"></i>
+                </div>
+                <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">Ask All Your Questions</h4>
+                <p style="color: var(--text-light); line-height: 1.8;">
+                  From technical details to permitting and timelines—we answer every question you have. Our consultations
+                  are educational, not sales pitches. You leave informed, not pressured.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div style="background: var(--accent-light); padding: 2.5rem; border-radius: 16px; height: 100%; text-align: center;">
+                <div style="width: 100px; height: 100px; border-radius: 50%;
+                            background: linear-gradient(135deg, var(--primary-blue), var(--accent-green));
+                            color: white; display: flex; align-items: center; justify-content: center;
+                            margin: 0 auto 1.5rem; font-size: 3rem;">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">Zero Obligation or Pressure</h4>
+                <p style="color: var(--text-light); line-height: 1.8;">
+                  Our consultation is completely free with no obligation to purchase. We never use high-pressure sales
+                  tactics. You decide what's right for you, on your timeline.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What's Included -->
+      <section style="padding: 5rem 0; background: linear-gradient(135deg, #f8f9fa, #e8f4f8);">
+        <div class="container">
+          <div class="section-heading text-center mb-5">
+            <h2 style="color: var(--primary-dark); font-size: 2.5rem; font-weight: 700;">
+              What's Included in Your Free Consultation
+            </h2>
+            <p style="font-size: 1.2rem; color: var(--text-light); max-width: 800px; margin: 1rem auto 0;">
+              Our comprehensive consultation process ensures you have all the information needed to make a confident decision.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 mb-4">
+              <div style="background: white; padding: 3rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
                 <div style="display: flex; align-items: start;">
-                  <div style="color: var(--accent-green); font-size: 2rem; margin-right: 1.5rem;">
+                  <div style="color: var(--accent-green); font-size: 3rem; margin-right: 1.5rem; flex-shrink: 0;">
                     <i class="bi bi-house-check"></i>
                   </div>
                   <div>
-                    <h5 style="color: var(--primary-dark); font-weight: 700;">Property Assessment</h5>
-                    <p style="color: var(--text-light); margin: 0;">
-                      We analyze your roof orientation, shading, available space, and structural considerations to
-                      determine your property's solar potential and optimal system configuration.
+                    <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">Complete Property Assessment</h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      We analyze your roof orientation, pitch, available space, shading patterns throughout the day and
+                      seasons, structural considerations, and electrical service capacity. This determines your property's
+                      true solar potential and optimal system size.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 mb-4">
-              <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+
+            <div class="col-lg-6 mb-4">
+              <div style="background: white; padding: 3rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
                 <div style="display: flex; align-items: start;">
-                  <div style="color: var(--accent-green); font-size: 2rem; margin-right: 1.5rem;">
+                  <div style="color: var(--accent-green); font-size: 3rem; margin-right: 1.5rem; flex-shrink: 0;">
                     <i class="bi bi-lightning-charge"></i>
                   </div>
                   <div>
-                    <h5 style="color: var(--primary-dark); font-weight: 700;">Energy Usage Analysis</h5>
-                    <p style="color: var(--text-light); margin: 0;">
-                      We review your electricity bills and consumption patterns to design a system that matches your
-                      actual energy needs and maximizes your savings potential.
+                    <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">Detailed Energy Usage Analysis</h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      We review your electricity bills from the past 12 months to understand your consumption patterns,
+                      seasonal variations, and rate structure. This ensures we design a system matched to your actual
+                      needs—not a generic estimate.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 mb-4">
-              <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+
+            <div class="col-lg-6 mb-4">
+              <div style="background: white; padding: 3rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
                 <div style="display: flex; align-items: start;">
-                  <div style="color: var(--accent-green); font-size: 2rem; margin-right: 1.5rem;">
-                    <i class="bi bi-calculator"></i>
+                  <div style="color: var(--accent-green); font-size: 3rem; margin-right: 1.5rem; flex-shrink: 0;">
+                    <i class="bi bi-graph-up-arrow"></i>
                   </div>
                   <div>
-                    <h5 style="color: var(--primary-dark); font-weight: 700;">Savings Projection</h5>
-                    <p style="color: var(--text-light); margin: 0;">
-                      Get a detailed breakdown of your expected energy production, cost savings, payback period, and
-                      long-term financial benefits. We show you exactly what solar means for your bottom line.
+                    <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">Accurate Savings Projection</h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      Get a detailed breakdown showing expected annual energy production, monthly and annual savings,
+                      payback period, 25-year savings total, and return on investment. All projections based on real
+                      data, not generic estimates.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 mb-4">
-              <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+
+            <div class="col-lg-6 mb-4">
+              <div style="background: white; padding: 3rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
                 <div style="display: flex; align-items: start;">
-                  <div style="color: var(--accent-green); font-size: 2rem; margin-right: 1.5rem;">
-                    <i class="bi bi-piggy-bank"></i>
+                  <div style="color: var(--accent-green); font-size: 3rem; margin-right: 1.5rem; flex-shrink: 0;">
+                    <i class="bi bi-cash-stack"></i>
                   </div>
                   <div>
-                    <h5 style="color: var(--primary-dark); font-weight: 700;">Financing & Incentives</h5>
-                    <p style="color: var(--text-light); margin: 0;">
-                      We explain all available financing options, government rebates, tax credits, and incentive programs.
-                      Our goal is to make solar affordable and accessible for your budget.
+                    <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">Incentives & Financing Options</h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      We explain all available federal, provincial, and municipal incentive programs you qualify for, plus
+                      financing options including loans, leases, and power purchase agreements. Our goal is making solar
+                      affordable for your specific budget.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+              <div style="background: white; padding: 3rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+                <div style="display: flex; align-items: start;">
+                  <div style="color: var(--accent-green); font-size: 3rem; margin-right: 1.5rem; flex-shrink: 0;">
+                    <i class="bi bi-diagram-3"></i>
+                  </div>
+                  <div>
+                    <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">Custom System Design</h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      Receive a preliminary system design showing panel placement, equipment specifications, and expected
+                      performance. We optimize for aesthetics, production, and budget—not just slapping panels on your roof.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+              <div style="background: white; padding: 3rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+                <div style="display: flex; align-items: start;">
+                  <div style="color: var(--accent-green); font-size: 3rem; margin-right: 1.5rem; flex-shrink: 0;">
+                    <i class="bi bi-calendar-check"></i>
+                  </div>
+                  <div>
+                    <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">Timeline & Next Steps</h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      Clear explanation of the entire process from permitting to installation to activation. You'll know
+                      exactly what to expect, how long it takes, and what your involvement entails at each stage.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="row mb-5">
-            <div class="col-lg-8 offset-lg-2">
-              <div style="background: var(--accent-light); padding: 3rem; border-radius: 12px; text-align: center; border: 2px solid var(--accent-green);">
-                <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1.5rem;">
-                  What to Expect During Your Consultation
-                </h4>
-                <div style="text-align: left; max-width: 600px; margin: 0 auto;">
-                  <p style="font-size: 1.05rem; color: var(--text-light); line-height: 1.8;">
-                    <strong>Step 1:</strong> Initial phone or video call to discuss your goals and answer basic questions (15-20 minutes)
-                  </p>
-                  <p style="font-size: 1.05rem; color: var(--text-light); line-height: 1.8;">
-                    <strong>Step 2:</strong> On-site visit to assess your property and take measurements (30-45 minutes)
-                  </p>
-                  <p style="font-size: 1.05rem; color: var(--text-light); line-height: 1.8;">
-                    <strong>Step 3:</strong> Detailed proposal delivered within 48 hours, including system design, pricing, and savings analysis
-                  </p>
-                  <p style="font-size: 1.05rem; color: var(--text-light); line-height: 1.8; margin-bottom: 0;">
-                    <strong>Step 4:</strong> Follow-up discussion to review proposal and answer any questions—with zero pressure
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="text-center">
-            <h3 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 2rem;">
-              Ready to Explore Solar for Your Property?
-            </h3>
-            <p style="font-size: 1.2rem; color: var(--text-light); margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
-              Schedule your free consultation today. No obligation, no pressure—just honest answers and expert guidance
-              to help you make the best decision for your energy future.
+      <!-- Consultation Process -->
+      <section style="padding: 5rem 0; background: white;">
+        <div class="container">
+          <div class="section-heading text-center mb-5">
+            <h2 style="color: var(--primary-dark); font-size: 2.5rem; font-weight: 700;">
+              How the Consultation Process Works
+            </h2>
+            <p style="font-size: 1.2rem; color: var(--text-light); max-width: 800px; margin: 1rem auto 0;">
+              Simple, transparent, and designed to fit your schedule.
             </p>
-            <a href="index.html#quote" class="btn btn-primary btn-lg me-3">Schedule Free Consultation</a>
-            <a href="tel:+18005551234" class="btn btn-secondary btn-lg">Call Us: 1-800-555-1234</a>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div style="text-align: center; padding: 2rem;">
+                <div style="width: 100px; height: 100px; border-radius: 50%;
+                            background: var(--accent-light); color: var(--primary-blue);
+                            display: flex; align-items: center; justify-content: center;
+                            margin: 0 auto 1.5rem; font-size: 3rem; font-weight: 700; border: 3px solid var(--primary-blue);">
+                  1
+                </div>
+                <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">Initial Contact</h4>
+                <p style="color: var(--text-light); line-height: 1.7;">
+                  Call us or fill out the consultation request form. We'll schedule a brief 15-20 minute phone or video
+                  call to discuss your goals and answer basic questions.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div style="text-align: center; padding: 2rem;">
+                <div style="width: 100px; height: 100px; border-radius: 50%;
+                            background: var(--accent-light); color: var(--primary-blue);
+                            display: flex; align-items: center; justify-content: center;
+                            margin: 0 auto 1.5rem; font-size: 3rem; font-weight: 700; border: 3px solid var(--primary-blue);">
+                  2
+                </div>
+                <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">On-Site Visit</h4>
+                <p style="color: var(--text-light); line-height: 1.7;">
+                  We visit your property to assess your roof, take measurements, evaluate shading, and inspect your
+                  electrical panel. Most site visits take 30-45 minutes.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div style="text-align: center; padding: 2rem;">
+                <div style="width: 100px; height: 100px; border-radius: 50%;
+                            background: var(--accent-light); color: var(--primary-blue);
+                            display: flex; align-items: center; justify-content: center;
+                            margin: 0 auto 1.5rem; font-size: 3rem; font-weight: 700; border: 3px solid var(--primary-blue);">
+                  3
+                </div>
+                <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">Detailed Proposal</h4>
+                <p style="color: var(--text-light); line-height: 1.7;">
+                  Within 48 hours, you receive a comprehensive proposal including system design, equipment specifications,
+                  pricing, savings analysis, and financing options.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div style="text-align: center; padding: 2rem;">
+                <div style="width: 100px; height: 100px; border-radius: 50%;
+                            background: var(--accent-light); color: var(--primary-blue);
+                            display: flex; align-items: center; justify-content: center;
+                            margin: 0 auto 1.5rem; font-size: 3rem; font-weight: 700; border: 3px solid var(--primary-blue);">
+                  4
+                </div>
+                <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1rem;">Review & Decide</h4>
+                <p style="color: var(--text-light); line-height: 1.7;">
+                  Follow-up call to review the proposal and answer any questions. Take all the time you need to decide—
+                  absolutely no pressure. The decision is 100% yours.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section id="consultation-form" style="padding: 5rem 0; background: linear-gradient(135deg, var(--primary-blue), var(--primary-dark));">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <h2 style="color: white; font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem;">
+                Ready to Explore Solar for Your Property?
+              </h2>
+              <p style="color: white; font-size: 1.2rem; opacity: 0.95; line-height: 1.7; margin-bottom: 2rem;">
+                Schedule your free consultation today. No obligation, no pressure—just honest answers and expert guidance
+                to help you make the best decision for your energy future.
+              </p>
+              <ul style="color: white; font-size: 1.1rem; line-height: 2.2; list-style: none; padding: 0;">
+                <li><i class="bi bi-check-circle-fill" style="color: var(--accent-green); margin-right: 0.5rem;"></i> 100% free with zero obligation</li>
+                <li><i class="bi bi-check-circle-fill" style="color: var(--accent-green); margin-right: 0.5rem;"></i> Accurate savings projections based on your property</li>
+                <li><i class="bi bi-check-circle-fill" style="color: var(--accent-green); margin-right: 0.5rem;"></i> Complete incentive and financing guidance</li>
+                <li><i class="bi bi-check-circle-fill" style="color: var(--accent-green); margin-right: 0.5rem;"></i> Honest assessment—we'll tell you if solar isn't right</li>
+              </ul>
+            </div>
+            <div class="col-lg-5">
+              <div style="background: white; padding: 3rem; border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3);">
+                <h4 style="color: var(--primary-dark); font-weight: 700; margin-bottom: 1.5rem; text-align: center;">
+                  Schedule Your Free Consultation
+                </h4>
+                <div class="mb-3">
+                  <a href="index.html#quote" class="btn btn-lg w-100"
+                     style="background: var(--accent-green); border: none; color: white; padding: 1rem; font-weight: 600; font-size: 1.1rem;">
+                    Request Consultation Online
+                  </a>
+                </div>
+                <div class="text-center my-3" style="color: var(--text-light); font-weight: 600;">— OR —</div>
+                <div class="mb-3">
+                  <a href="tel:+18005551234" class="btn btn-lg btn-outline-primary w-100"
+                     style="padding: 1rem; font-weight: 600; font-size: 1.1rem;">
+                    <i class="bi bi-telephone-fill me-2"></i>Call: 1-800-555-1234
+                  </a>
+                </div>
+                <p style="text-align: center; color: var(--text-light); font-size: 0.95rem; margin: 0;">
+                  Most consultations scheduled within 24-48 hours
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section style="padding: 5rem 0; background: white;">
+        <div class="container">
+          <div class="section-heading text-center mb-5">
+            <h2 style="color: var(--primary-dark); font-size: 2.5rem; font-weight: 700;">
+              Common Questions About Consultations
+            </h2>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <div class="accordion" id="faqAccordion">
+                <div style="background: white; border: 1px solid #e0e0e0; border-radius: 12px; margin-bottom: 1rem; overflow: hidden;">
+                  <h5 style="margin: 0;">
+                    <button style="width: 100%; text-align: left; padding: 1.5rem; background: white; border: none;
+                                   color: var(--primary-dark); font-weight: 600; font-size: 1.1rem;">
+                      <i class="bi bi-question-circle me-2" style="color: var(--accent-green);"></i>
+                      Is the consultation really free?
+                    </button>
+                  </h5>
+                  <div style="padding: 0 1.5rem 1.5rem;">
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      Yes, absolutely. There's no charge for the consultation, site visit, or detailed proposal. We only
+                      get paid if you decide to move forward with installation—and there's zero pressure to do so.
+                    </p>
+                  </div>
+                </div>
+
+                <div style="background: white; border: 1px solid #e0e0e0; border-radius: 12px; margin-bottom: 1rem; overflow: hidden;">
+                  <h5 style="margin: 0;">
+                    <button style="width: 100%; text-align: left; padding: 1.5rem; background: white; border: none;
+                                   color: var(--primary-dark); font-weight: 600; font-size: 1.1rem;">
+                      <i class="bi bi-question-circle me-2" style="color: var(--accent-green);"></i>
+                      How long does the consultation take?
+                    </button>
+                  </h5>
+                  <div style="padding: 0 1.5rem 1.5rem;">
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      The initial phone call is 15-20 minutes. The on-site visit takes 30-45 minutes. The follow-up
+                      proposal review call is typically 20-30 minutes. We work around your schedule.
+                    </p>
+                  </div>
+                </div>
+
+                <div style="background: white; border: 1px solid #e0e0e0; border-radius: 12px; margin-bottom: 1rem; overflow: hidden;">
+                  <h5 style="margin: 0;">
+                    <button style="width: 100%; text-align: left; padding: 1.5rem; background: white; border: none;
+                                   color: var(--primary-dark); font-weight: 600; font-size: 1.1rem;">
+                      <i class="bi bi-question-circle me-2" style="color: var(--accent-green);"></i>
+                      Do I need to have my utility bills ready?
+                    </button>
+                  </h5>
+                  <div style="padding: 0 1.5rem 1.5rem;">
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      Having 12 months of bills is helpful for the most accurate analysis, but not required for the initial
+                      consultation. We can usually access this information through your utility company with your permission.
+                    </p>
+                  </div>
+                </div>
+
+                <div style="background: white; border: 1px solid #e0e0e0; border-radius: 12px; overflow: hidden;">
+                  <h5 style="margin: 0;">
+                    <button style="width: 100%; text-align: left; padding: 1.5rem; background: white; border: none;
+                                   color: var(--primary-dark); font-weight: 600; font-size: 1.1rem;">
+                      <i class="bi bi-question-circle me-2" style="color: var(--accent-green);"></i>
+                      What if solar doesn't make sense for my property?
+                    </button>
+                  </h5>
+                  <div style="padding: 0 1.5rem 1.5rem;">
+                    <p style="color: var(--text-light); line-height: 1.8; margin: 0;">
+                      We'll tell you honestly. If your roof has too much shading, faces the wrong direction, needs structural
+                      work, or your energy costs are too low to justify solar, we'll explain why and suggest alternatives.
+                      We never push solar when it doesn't make financial sense.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
