@@ -1,13 +1,17 @@
-/* Professional Solar Company Color Palette */
+/* Professional Solar Company Color Palette - Grey & Orange Theme */
 :root {
-  --primary-blue: #0066cc;
-  --primary-dark: #003d7a;
-  --accent-green: #00a65a;
-  --accent-light: #e8f4f8;
+  --primary-grey: #5a5a5a;
+  --primary-dark: #2a2a2a;
+  --accent-orange: #ff6b35;
+  --accent-light: #f5f5f5;
   --text-dark: #1a1a1a;
   --text-light: #666666;
   --white: #ffffff;
   --border-gray: #e0e0e0;
+
+  /* Legacy variable names for compatibility */
+  --primary-blue: #5a5a5a;
+  --accent-green: #ff6b35;
 }
 
 /* Reset margin for body and header */
